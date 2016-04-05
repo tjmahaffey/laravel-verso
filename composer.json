@@ -10,8 +10,8 @@
     "authors": [
         {
             "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "email": "tj@tjmahaffey.com",
+            "homepage": "http://www.tjmahaffey.com",
             "role": "Developer"
         }
     ],
@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tjmahaffey\\Verso\\": "src"
+            "Tjmahaffey\\Verso\\": "src/"
         }
     },
     "autoload-dev": {

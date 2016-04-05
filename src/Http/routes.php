@@ -10,4 +10,4 @@ Route::get('/{slug}', 'VersoController@show');
 
 // Optional route to handle homepage view.
 // Use this route if you'd like Verso to handle your homepage as well.
-Route::get('/', 'VersoController@home');
+//Route::get('/', 'VersoController@home');

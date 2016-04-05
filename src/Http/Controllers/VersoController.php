@@ -6,6 +6,7 @@ namespace Tjmahaffey\Verso\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Page;
 
 class VersoController extends Controller
 {
@@ -13,16 +14,16 @@ class VersoController extends Controller
     public function index()
     {
         
-        return view('pages.list')->with([ 'pages' => Page::all() ]);
+        return view('Verso::list')->with([ 'pages' => Page::all() ]);
     }
     
     
-    public function home()
-    {
+    // public function home()
+    // {
 
-
-        return view('front.home')->with(['product' => $product, 'post' => $post, 'page' => $page]);
-    }
+    //     $test = 'sometest';
+    //     return view('Verso::home')->with('test', $test);
+    // }
     
     
     //  CRUD methods.   

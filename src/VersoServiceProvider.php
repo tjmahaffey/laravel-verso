@@ -27,6 +27,10 @@ class VersoServiceProvider extends ServiceProvider
         // use this if your package has routes
         $this->setupRoutes($this->app->router);
         
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views/laraveldaily/timezones'),
+         ]);
+
         // use this if your package needs a config file
         // $this->publishes([
         //         __DIR__.'/config/config.php' => config_path('Verso.php'),
