@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Http\Controllers;
 namespace Tjmahaffey\Verso\Http\Controllers;
@@ -6,7 +6,7 @@ namespace Tjmahaffey\Verso\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Page;
+use Tjmahaffey\Verso\Models\Page;
 
 class VersoController extends Controller
 {
@@ -33,29 +33,29 @@ class VersoController extends Controller
         return view('pages.create');
     }
     
-    public function store()
+    public function store(Request $request)
     {
         
         $page = new Page();
-        $page->title = Input::get('title');
-        $page->slug = Input::get('slug');
-        $page->content = Input::get('content');
-        $page->seo_keywords = Input::get('seo_keywords');
-        $page->seo_description = Input::get('seo_description');         
+        $page->title = $request->title;
+        $page->slug = $request->slug;
+        $page->content = $request->content;
+        $page->keywords = $request->keywords;
+        $page->description = $request->description;         
         $page->save();
         Session::flash('msg', 'Content page created.');
         return redirect('page');
     }
     
-    public function update($id)
+    public function update(Request $request, $id)
     {
         
         $page = Page::find($id);
-        $page->title = Input::get('title');
-        $page->slug = Input::get('slug');
-        $page->content = Input::get('content');
-        $page->seo_keywords = Input::get('seo_keywords');
-        $page->seo_description = Input::get('seo_description');         
+        $page->title = $request->title;
+        $page->slug = $request->slug;
+        $page->content = $request->content;
+        $page->keywords = $request->keywords;
+        $page->description = $request->description;         
         $page->save();
         Session::flash('msg', 'Content page updated.');
         return redirect('page');

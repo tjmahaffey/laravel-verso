@@ -1,7 +1,8 @@
-<?php namespace Tjmahaffey\Verso;
+<?php 
+
+namespace Tjmahaffey\Verso\Models;
 
 use \Illuminate\Database\Eloquent\Model as Eloquent;
-
 
 class Page extends Eloquent {
 
