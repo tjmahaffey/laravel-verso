@@ -3,6 +3,8 @@
     "description": "Page manager for Laravel.",
     "homepage": "https://github.com/tjmahaffey/laravel-verso",
     "license": "MIT",
+    "keywords": ["verso", "page" "laravel"],
+    "type": "project",
     "authors": [
         {
             "name": ":author_name",
