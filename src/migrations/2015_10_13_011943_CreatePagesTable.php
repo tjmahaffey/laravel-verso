@@ -19,7 +19,6 @@ class CreatePagesTable extends Migration
               $table->string('title');
               $table->string('slug');
               $table->string('keywords');
-              $table->string('description');
               $table->longtext('content');
         }); 
     }

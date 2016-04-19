@@ -31,6 +31,10 @@ class VersoServiceProvider extends ServiceProvider
             __DIR__.'/views' => base_path('resources/views/verso'),
          ]);
 
+        $this->publishes([
+            realpath(__DIR__.'/migrations') => $this->app->databasePath().'/migrations',
+        ]);
+
         // use this if your package needs a config file
         // $this->publishes([
         //         __DIR__.'/config/config.php' => config_path('Verso.php'),
