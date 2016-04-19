@@ -24,7 +24,7 @@
     "autoload": {
         "classmap": [
             "app/Models"
-        ]
+        ],
         "psr-4": {
             "Tjmahaffey\\Verso\\": "src/"
         }
