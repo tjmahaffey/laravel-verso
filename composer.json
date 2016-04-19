@@ -1,11 +1,12 @@
 {
     "name": "tjmahaffey/verso",
-    "description": ":package_description",
+    "description": "Page manager for Laravel.",
     "keywords": [
-        "league",
-        ":package_name"
+        "Verso",
+        "Laravel",
+        "Page"
     ],
-    "homepage": "https://github.com/thephptjmahaffey/verso",
+    "homepage": "https://github.com/tjmahaffey/laravel-verso",
     "license": "MIT",
     "authors": [
         {
@@ -24,6 +25,9 @@
         "scrutinizer/ocular": "~1.1"
     },
     "autoload": {
+        "classmap": [
+            "app/Models"
+        ]
         "psr-4": {
             "Tjmahaffey\\Verso\\": "src/"
         }
